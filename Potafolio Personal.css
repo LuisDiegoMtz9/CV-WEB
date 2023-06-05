@@ -1,0 +1,164 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  height: 160vh;
+  background:linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)),url(fondo.jpg) center center fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "l   p   r"
+    "l   p   r"
+    "l   p   r";
+}
+.Centro {
+  grid-area: p;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Perfil {
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  color: white;
+  padding: 9px;
+}
+.yo{
+  width: 180px;
+  border-radius: 100%;
+}
+.itsur{
+  width: 80px;
+  border-radius: 100%;
+}
+.Perfil h1{
+ margin-top: 10%;
+ text-align: center;
+ font-size: medium;
+}
+.Perfil h2{
+  margin: 2%;
+  text-align: center;
+  font-size: medium;
+ }
+ .Perfil h4{
+  margin: 2%;
+  font-size: medium;
+  text-align: center;
+ }
+ .Perfil p{
+  margin: 2%;
+  font-size: small;
+  text-align: center;
+ }
+.Left {
+  grid-area: l;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.Right {
+  grid-area: r;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Sobremi {
+  color: yellow;
+  background:none;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-content: center;
+  
+}
+.Sobremi h1{
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 3px solid blue;
+  border-radius: 5px;
+  width: 70%;
+  height: 10%;
+}
+.Sobremi>div{
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Sobremi1 {
+   background:linear-gradient(rgb (50,50,50,0.5),rgb (50,50,50,0.5));
+   transform: perspective(500px) rotateY(0deg);
+   background: rgb(0, 0, 0,0.90);
+   display: flex;
+   justify-content: center;
+   text-align: justify;
+   align-items: center;
+   flex-direction: column;
+}
+.Sobremi2 {
+  background: rgb(0, 0, 0,0.90);
+    transform: perspective(500px) rotateY(180deg);
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: aliceblue;
+
+}
+.Sobremi2 p{
+  margin: 5px;
+  padding: 5px;
+}
+
+.Sobremi:hover .Sobremi1{
+    transform: perspective(500px) rotateY(180deg);
+}
+.Sobremi:hover .Sobremi2{
+    transform: perspective(500px) rotateY(360deg);
+}
+.Skill2{
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px;
+  object-fit: cover;
+}
+.table {
+width: 200px;
+height: 200px;
+text-align: center;
+}
+.Experiencia2 h2{
+  font-size: small;
+}
+.Experiencia2 p{
+  font-size: 12px;
+}
